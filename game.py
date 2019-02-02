@@ -15,10 +15,8 @@ while i <= 5:
         for items in s:
             print(items, end=" ")
         if '-' not in s:
-            #print(items, end=" ")
             print("\nYou WIN")
             quit()
 if i == 6:
     print("Ran Out Of Tries")
     print("The word was " + w)
-
