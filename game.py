@@ -2,6 +2,7 @@ import random
 i = 1
 L = ["Word", "Part", "Parts"]
 w = random.choice(L)
+print(len(w), "letters")
 while i <= 5:
     g = input("Enter here: ")
     if w == g:
