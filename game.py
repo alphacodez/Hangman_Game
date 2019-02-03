@@ -1,8 +1,10 @@
 import random
 i = 0
-L = ["dogs", "part", "lego", "acid", "army"]
+L = ["apple", "fruit", "food", "supercalifragilisticexpialidocious", "human", "game", "word"]
 w = random.choice(L)
-s = ['-', '-', '-', '-']
+s = []
+for letter in w:
+    s.append("-")
 print(len(w), "letters")
 while i <= 6:
     g = input("Enter here a letter here: ")
@@ -10,9 +12,11 @@ while i <= 6:
     if f == -1:
         i += 1
         print("Your letter isn't here")
-        print(i, "out of 7 tries")
+        print(i, "out of 7 tries used")
     else:
-        s[f] = g
+        for n in range(len(w)):
+            if w[n] == g:
+                s[n] = g
         for items in s:
             print(items, end=" ")
         if '-' not in s:
