@@ -7,7 +7,7 @@ for letter in w:
     s.append("-")
 print(len(w), "letters")
 while i <= 6:
-    g = input("Enter here a letter here: ")
+    g = input("Enter a letter here: ")
     f = w.find(g)
     if f == -1:
         i += 1
